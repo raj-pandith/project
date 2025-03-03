@@ -58,10 +58,14 @@ const DoctorForm = ({ refreshDoctors }) => {
 
   return (
     
-    <div>
+    <div className=" row p-4">
+      <div>
       <Navbar></Navbar>
+      </div>
+
       <div className="d-flex flex-column justify-content-center align-items-center">
         <h2>Add Doctor</h2>
+
         <form onSubmit={handleSubmit} className="d-flex flex-column gap-4 w-25">
           <input type="text" name="name" placeholder="Name" value={doctor.name} onChange={handleChange} required />
           <input type="email" name="email" placeholder="Email" value={doctor.email} onChange={handleChange} required />
@@ -73,7 +77,7 @@ const DoctorForm = ({ refreshDoctors }) => {
           <input type="file" accept="image/*" onChange={handleImageChange} />
           <button type="submit">Add Doctor</button>
         </form>
-        <br />
+        
         <button className="btn-primary" onClick={() => navigate("/all-doctors")}>show doctors</button>
       </div>
     </div>

@@ -4,18 +4,12 @@ import Room from './pages/Room';
 import DoctorForm from './pages/DoctorForm.js';
 import { useState } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Navbar from './Component/Navbar.js';
-import Hero from './Component/Hero.js';
-import ThreeBoxes from './Component/ThreeBoxes.js';
-import About from './Component/About.js';
-import ServicesSection from './Component/ServicesSection.js';
-import Steps from './Component/Steps.js';
 import WebHome from './pages/webpages/WebHome.js';
 import DoctorList from './pages/DoctorList.js';
 import MyIssues from './Component/MyIssues.js';
+import ChatApp from './ChatApp.js';
 
 function App() {
-
    const [refresh, setRefresh] = useState(false);
   return (
     <BrowserRouter>
@@ -25,26 +19,10 @@ function App() {
         <Route path="/add-doctor" element={<DoctorForm/>}></Route>
          <Route path="/create-room" element={<Home></Home>}></Route>
          <Route path="/room/:roomId" element={<Room></Room>}></Route>
-         <Route path="/send-myissues" element={<MyIssues></MyIssues>}></Route>
-
+         <Route path="/send-myissue" element={<MyIssues></MyIssues>}></Route>
+         <Route path="/healthmate" element={ <ChatApp/>}></Route>
        </Routes>
     </BrowserRouter>
-
-    // <div>
-    //     <DoctorForm refreshDoctors={() => setRefresh(!refresh)} />
-    //     <DoctorList key={refresh} />
-
-        // <Navbar></Navbar>
-        // <Hero></Hero>
-        // <ThreeBoxes></ThreeBoxes>
-        // <About></About>
-        // <ServicesSection/>
-        // <Steps/> 
-        
-
-
-
-    // </div>
   );
 }
 

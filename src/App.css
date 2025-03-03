@@ -32,7 +32,47 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.right-text {
+  text-align: right;
+  max-width: 40vw;
+  border: 2px solid black;
+  justify-self: end;
+  padding: 3px 15px;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  background-color: rgb(14, 22, 24);
+  color: white;
+}
+
+.left-text {
+  max-width: 60vw;
+  border: 2px solid black;
+  justify-self: start;
+  max-width: 50vw;
+  padding: 3px 15px;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  background-color: rgb(22, 102, 126);
+  color: white;
+}
+
+
+.promptfield {
+  width: 60vw;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.send-btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
