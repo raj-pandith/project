@@ -12,6 +12,7 @@ import ServicesSection from './Component/ServicesSection.js';
 import Steps from './Component/Steps.js';
 import WebHome from './pages/webpages/WebHome.js';
 import DoctorList from './pages/DoctorList.js';
+import MyIssues from './Component/MyIssues.js';
 
 function App() {
 
@@ -21,9 +22,11 @@ function App() {
        <Routes>
         <Route path="/" element={<WebHome/>}></Route>
         <Route path="/all-doctors" element={<DoctorList/>}></Route>
+        <Route path="/add-doctor" element={<DoctorForm/>}></Route>
+         <Route path="/create-room" element={<Home></Home>}></Route>
+         <Route path="/room/:roomId" element={<Room></Room>}></Route>
+         <Route path="/send-myissues" element={<MyIssues></MyIssues>}></Route>
 
-         {/* <Route path="/" element={<Home></Home>}></Route>
-         <Route path="/room/:roomId" element={<Room></Room>}></Route> */}
        </Routes>
     </BrowserRouter>
 
