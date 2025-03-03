@@ -60,7 +60,7 @@ const DoctorForm = ({ refreshDoctors }) => {
     
     <div className=" row p-4">
       <div>
-      <Navbar></Navbar>
+         <Navbar></Navbar>
       </div>
 
       <div className="d-flex flex-column justify-content-center align-items-center">

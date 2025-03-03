@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../Component/Navbar";
 import { Route ,Routes} from "react-router-dom";
 import MyIssues from "../Component/MyIssues"
+import "./DoctorList.css";
 
 import "./hover.css"
 
@@ -30,11 +31,11 @@ const DoctorList = () => {
     <Navbar></Navbar>
       <h2 style={{"textAlign":"center"}} className="mt-5">Our Doctors</h2>
 
-      <div className="row  " style={{position:"relative",top:"20px"}}>
-    <div > 
-      <div className="col d-flex flex-wrap gap-4 p-3" style={{"height":"100vh","cursor":"pointer"}}>
+      <div className=" " style={{position:"relative",top:"20px"}}>
+    <div className="border"> 
+      <div className="col  d-flex flex-wrap align-items-center justify-content-center  gap-2 p-5" style={{"height":"100vh","cursor":"pointer",}}>
             {doctors.map((doctor) => (
-              <tr key={doctor.id} className="d-flex justify-content-start flex-column p-5 border  onhover" style={{borderRadius:"8px"}} >
+              <tr key={doctor.id} className="d-flex justify-content-center align-items-center flex-column p-3 border onhover" style={{borderRadius:"8px"}} >
                 <td className="d-flex align-items-center justify-content-center">
                   {doctor.image ? (
 

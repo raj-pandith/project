@@ -8,7 +8,8 @@ import WebHome from './pages/webpages/WebHome.js';
 import DoctorList from './pages/DoctorList.js';
 import MyIssues from './Component/MyIssues.js';
 import ChatApp from './ChatApp.js';
-
+import DownloadPDF from './Component/DownloadPDF.js';
+import Footer from './Component/Footer.js';
 function App() {
    const [refresh, setRefresh] = useState(false);
   return (
@@ -21,7 +22,9 @@ function App() {
          <Route path="/room/:roomId" element={<Room></Room>}></Route>
          <Route path="/send-myissue" element={<MyIssues></MyIssues>}></Route>
          <Route path="/healthmate" element={ <ChatApp/>}></Route>
+         <Route path="/DownloadPDF" element={<DownloadPDF/>}></Route>
        </Routes>
+        
     </BrowserRouter>
   );
 }

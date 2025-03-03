@@ -79,8 +79,8 @@ import React from 'react'
 const ServicesSection = () => {
   return (
     <div style={{ marginTop: "0", maxWidth: "1400px", margin: "0 auto" }}>
-      <div className="row text-center p-md-5">
-        <div className="col-12">
+      <div  className="row text-center p-md-5">
+        <div data-aos="fade-up" className="col-12">
           <h1 style={{ color: "#007bff", fontFamily: "'Arial', sans-serif", fontSize: "48px", fontWeight: "bold" }}>HealthCare24 Services</h1>
           <div className="row justify-content-center">
             <div className="col-md-5 p-3">
@@ -93,9 +93,12 @@ const ServicesSection = () => {
             </div>
           </div>
         </div>
+
         <div className="row justify-content-center">
+
           <div className="col-md-12 p-4">
-            <div className="row gap-5 justify-content-center">
+
+            <div data-aos="fade-up" className="row gap-5 justify-content-center">
               <div className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
                 <h5 style={{ fontFamily: "'Arial', sans-serif", fontSize: "30px", fontWeight: "bold", color: "#003366" }}>Video Consulting</h5>
                 <h6 style={{ fontFamily: "'Arial', sans-serif", fontSize: "18px", fontWeight: "400" }}>
@@ -107,7 +110,8 @@ const ServicesSection = () => {
                   </button>
                 </a>
               </div>
-              <div className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
+
+              <div data-aos="fade-up" className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
                 <h5 style={{ fontFamily: "'Arial', sans-serif", fontSize: "30px", fontWeight: "bold", color: "#003366" }}>Health Tips</h5>
                 <h6 style={{ fontFamily: "'Arial', sans-serif", fontSize: "18px", fontWeight: "400" }}>
                   Get personalized health tips to lead a healthier lifestyle. From diet to exercise, our experts provide guidance on maintaining a balanced lifestyle to improve your overall well-being.
@@ -118,7 +122,7 @@ const ServicesSection = () => {
                   </button>
                 </a>
               </div>
-              <div className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
+              <div data-aos="fade-up" className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
                 <h5 style={{ fontFamily: "'Arial', sans-serif", fontSize: "30px", fontWeight: "bold", color: "#003366" }}>Pregnancy Monitoring</h5>
                 <h6 style={{ fontFamily: "'Arial', sans-serif", fontSize: "18px", fontWeight: "400" }}>
                   Monitor your pregnancy health with our specialized services. Track key milestones and receive expert advice on ensuring the health of both mother and baby.
@@ -132,7 +136,7 @@ const ServicesSection = () => {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div data-aos="fade-up" className="row justify-content-center">
           <div className="col-12 p-4">
             <div className="row gap-5 justify-content-center">
               <div className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
@@ -146,7 +150,7 @@ const ServicesSection = () => {
                   </button>
                 </a>
               </div>
-              <div className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
+              <div data-aos="fade-up" className="col-md-3 border rounded shadow p-4" style={{ width: "300px", backgroundColor: "#f0f8ff", height: "300px" }}>
                 <h5 style={{ fontFamily: "'Arial', sans-serif", fontSize: "30px", fontWeight: "bold", color: "#003366" }}>Mental Care</h5>
                 <h6 style={{ fontFamily: "'Arial', sans-serif", fontSize: "18px", fontWeight: "400" }}>
                   Providing emotional support and therapy for mental well-being. Our mental care services include therapy, counseling, and mindfulness practices to support mental health.

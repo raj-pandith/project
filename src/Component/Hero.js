@@ -37,7 +37,7 @@ const Hero = () => {
         }}>
       </div>
 
-      <div className='text-white text-end' 
+      <div data-aos="fade-left" className='text-white text-end' 
         style={{ 
           maxWidth: '600px',
           width: '100%',

@@ -5,7 +5,7 @@ import About from '../../Component/About'
 import ServicesSection from '../../Component/ServicesSection'
 import Steps from '../../Component/Steps'
 import ThreeBoxes from '../../Component/ThreeBoxes'
-
+import Footer from '../../Component/Footer.js'
 const WebHome = () => {
   return (
     <div>
@@ -15,6 +15,8 @@ const WebHome = () => {
         <ServicesSection></ServicesSection>
         <ThreeBoxes></ThreeBoxes>
         <Steps></Steps>
+         <Footer></Footer>
+      
       
     </div>
   )

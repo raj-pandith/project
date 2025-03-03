@@ -6,7 +6,6 @@ const Home = () => {
     const handleCreateRoom = () => {
         navigate(`/room/${Date.now()}`);
     }
-
     return (
         <div>
             <h1>Home</h1>
@@ -14,5 +13,4 @@ const Home = () => {
         </div>
     )
 }
-
 export default Home

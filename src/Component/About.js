@@ -82,21 +82,22 @@ import React from "react";
 
 const About = () => {
   return (
-    <div style={{ maxWidth: "1400px", margin: "0 auto", backgroundColor: "white", textAlign: "center", fontFamily: '"Arial", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif' }}>
-      <div className="row gap-3 p-4" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", marginTop: "0", marginBottom: "0", flexDirection: "row" }}>
+    <div  style={{ maxWidth: "1400px", margin: "0 auto", backgroundColor: "white", textAlign: "center", fontFamily: '"Arial", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif' }}>
+      <div className=" d-flex " style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", marginTop: "0", marginBottom: "0", flexDirection: "row" }}>
         
         {/* Images Section */}
-        <div className="col-md-5 mx-auto m-3 d-flex flex-column justify-content-center order-md-1 order-2">
+        <div className="col-5 d-flex mx-auto m-3 d-flex flex-column justify-content-center order-md-1 order-2">
           <div className="row h-100 d-flex flex-column flex-md-row align-items-center">
             <div className="col-12 d-md-flex flex-md-column">
-              <img
+              <img data-aos="fade-up"
                 src="https://tebewebe.online/ivycare/wp-content/uploads/sites/105/2024/04/young-orthodontist.jpg"
                 alt=""
                 className="img-fluid rounded-4 w-100"
                 style={{ objectFit: "cover", objectPosition: "top", height: "300px", margin: "10px" }}
               />
             </div>
-            <div className="col-12 col-md-6 d-flex justify-content-center">
+
+            <div data-aos="fade-up" className="col-12 col-md-6 d-flex justify-content-center">
               <img
                 src="https://tebewebe.online/ivycare/wp-content/uploads/sites/105/2024/04/healthcare-homecare-and-caregiver-with-grandma-to-support-her-in-retirement-medical-and-old-age--e1714026286978.jpg"
                 alt=""
@@ -104,8 +105,9 @@ const About = () => {
                 style={{ objectFit: "cover", objectPosition: "top", height: "300px", width: "100%", maxWidth: "400px", margin: "10px" }}
               />
             </div>
+
             <div className="col-12 col-md-6 d-flex justify-content-center">
-              <img
+              <img data-aos="fade-up"
                 src="https://tebewebe.online/ivycare/wp-content/uploads/sites/105/2024/04/health-insurance-service-young-asian-caregiver-nurse-examine-senior-man-or-woman-patient-at-home-e1714026333745.jpg"
                 alt=""
                 className="img-fluid rounded-4"
@@ -116,7 +118,7 @@ const About = () => {
         </div>
         
         {/* Text Section */}
-        <div className="col-md-5 mx-auto mx-2 m-3 order-md-2 order-1 d-flex flex-column justify-content-center">
+        <div data-aos="fade-left" className="col-md-5 mx-auto mx-2 m-3 order-md-2 order-1 d-flex flex-column justify-content-center">
           <h2 className="about-heading" style={{ fontSize: "3rem" }}>Dedicated to Your Health and Well-being</h2>
           <p className="about-text" style={{ fontSize: "1.5rem" }}>
             At HealthCare24, we are committed to providing compassionate healthcare services designed to ensure your comfort and peace of mind. Whether it's homecare, personalized treatment, or ongoing support, we are here to make sure your needs are met with the highest standard of care.
