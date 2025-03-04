@@ -9,7 +9,7 @@ import DoctorList from './pages/DoctorList.js';
 import MyIssues from './Component/MyIssues.js';
 import ChatApp from './ChatApp.js';
 import DownloadPDF from './Component/DownloadPDF.js';
-import Footer from './Component/Footer.js';
+import SendEmail from './pages/DoctorsView/SendEmail.js';
 function App() {
    const [refresh, setRefresh] = useState(false);
   return (
@@ -23,6 +23,8 @@ function App() {
          <Route path="/send-myissue" element={<MyIssues></MyIssues>}></Route>
          <Route path="/healthmate" element={ <ChatApp/>}></Route>
          <Route path="/DownloadPDF" element={<DownloadPDF/>}></Route>
+         <Route path="/sendemailtopatient" element={<SendEmail/>}></Route>
+
        </Routes>
         
     </BrowserRouter>

@@ -210,7 +210,8 @@ const MyIssues = () => {
               <option value="Other">Other</option>
             </select>
             <textarea name="healthproblem" placeholder="Enter your health issue" onChange={handleChange} required></textarea>
-            <input type="file" onChange={handleFileChange} required />
+            <label htmlFor="file"><h6>Any Reports ?</h6></label>
+            <input type="file" id="file" onChange={handleFileChange} required />
             <button type="submit" className="submit-btn">Send</button>
           </form>
         ) : (

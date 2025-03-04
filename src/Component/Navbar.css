@@ -1,0 +1,9 @@
+.nav-ul>li>a:hover {
+    background-color: rgb(24, 82, 227);
+    color: white !important;
+    border-radius: 10%;
+}
+
+.nav-ul {
+    gap: 1em !important;
+}

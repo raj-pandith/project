@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import FirstAidDownload from './DownloadPDF';
+import "./Navbar.css"
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -20,20 +21,20 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-ul">
             <li className="nav-item">
-              <a className='nav-link text-primary active ' aria-current="page" onClick={() => navigate("/all-doctors")} style={{ cursor: 'pointer' }}>Doctors</a>
+              <a className='nav-link text-primary  active ' aria-current="page" onClick={() => navigate("/all-doctors")} style={{ cursor: 'pointer' }}>Doctors</a>
             </li>
             <li className="nav-item">
-               <a className="nav-link text-primary" style={{fontWeight:'400',cursor:"pointer"}}  onClick={()=>navigate("/healthmate")}>MediBot</a>
-            </li>
-
-            <li className="nav-item">
-               <a className="nav-link text-primary" style={{fontWeight:'400',cursor:"pointer"}}  onClick={()=>navigate(`/room/${Date.now()}`)}>Rooms</a>
+               <a className="nav-link text-primary  " style={{fontWeight:'400',cursor:"pointer"}}  onClick={()=>navigate("/healthmate")}>MediBot</a>
             </li>
 
             <li className="nav-item">
-               <a className="nav-link text-primary" style={{fontWeight:'400',cursor:"pointer"}}  onClick={()=>navigate(`/DownloadPDF`)}>FirstAid</a>
+               <a className="nav-link text-primary  " style={{fontWeight:'400',cursor:"pointer"}}  onClick={()=>navigate(`/room/${Date.now()}`)}>Join Meeting</a>
+            </li>
+
+            <li className="nav-item">
+               <a className="nav-link  text-primary " style={{fontWeight:'400',cursor:"pointer"}}  onClick={()=>navigate(`/DownloadPDF`)}>FirstAid</a>
             </li>
           </ul>
           <form className="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">

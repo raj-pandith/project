@@ -33,7 +33,7 @@ const Hero = () => {
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
           zIndex: -1,
-          filter: 'brightness(60%)' // Darker background for better contrast
+          filter: 'brightness(90%)' // Darker background for better contrast
         }}>
       </div>
 
@@ -57,7 +57,9 @@ const Hero = () => {
             lineHeight: '1.2',
             wordBreak: 'break-word',
             whiteSpace: 'normal',
-            maxWidth: '550px'
+            maxWidth: '550px',
+            textShadow:"0px 0px 30px  black"
+            
           }}>
           Your Health, <br /> Your Doctor, <br /> Anytime
         </h3>

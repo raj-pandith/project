@@ -29,7 +29,7 @@ const DoctorList = () => {
   return (
     <div >
     <Navbar></Navbar>
-      <h2 style={{"textAlign":"center"}} className="mt-5">Our Doctors</h2>
+      <h2 style={{"textAlign":"center",textDecoration:'underline'}} className="mt-5" >Our Doctors</h2>
 
       <div className=" " style={{position:"relative",top:"20px"}}>
     <div className="border"> 

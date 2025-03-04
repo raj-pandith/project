@@ -232,7 +232,7 @@ const ChatApp = () => {
             <Navbar />
             <div className='container d-flex flex-column align-items-center'>
                 <NavBarChatBot />
-                <div className='msg-container' ref={chatContainerRef} style={{ height: "60vh", width: "80vw",margin:"10px", overflowY: "auto" }}>
+                <div className='msg-container' ref={chatContainerRef} style={{ height: "40vh", width: "80vw",margin:"10px", overflowY: "auto" }}>
                     <div className='left-text' style={{ textAlign: "left", margin:"20px"}}>
                         <div className='left-boll'></div>
                         <p>What health problem do you have?</p>
@@ -247,7 +247,7 @@ const ChatApp = () => {
                       </div>
                     ))}
                 </div>
-                <div className="input-container d-flex" style={{ marginTop: "20px", width: "70vw" }}>
+                <div className="input-container d-flex" style={{ position:"relative",bottom:"30px",marginTop: "20px", width: "70vw" }}>
                     <input
                         type="text"
                         value={question}
